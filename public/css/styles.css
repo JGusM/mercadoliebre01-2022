@@ -1,0 +1,372 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h2 {
+    font-size: 24px;
+    color: #666;
+    width: 100%;
+}
+
+p {
+    font-size: 12px;
+}
+
+/*-------------------------------------------HEADER-----------------------------------*/
+
+header {
+    background-color: #EAC926; ;
+}
+
+header div.top-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header div.top-header div.logo {
+    width: 50%;
+    padding: 10px;
+    flex-grow: 45;
+}
+
+header div.top-header div.form {
+    width: 50%;
+    flex-grow: 45;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+header .header-compra {
+    display: -webkit-inline-box;
+    margin-right: 100px;
+
+}
+
+header .header-compra i {
+    margin-right: 20px;
+}
+
+header .header-compra p {
+    width: 110%;
+    font-size: 12px;
+}
+
+header div.top-header div i {
+    width: 100%;
+}
+header div.top-header div.form .input {
+    width: 80%;
+}
+
+
+header div.top-header div.form .button {
+    width: 10%;
+}
+
+
+header .burger-menu {
+    text-align: center;
+    background-color: #1259c3;
+    border-radius: 10%;
+    color: white;
+    padding: 4px;
+    margin: auto;
+    width: 28px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    text-align: left;
+}
+
+header nav {
+    display: none;
+}
+
+
+/*------------------------------------------FIN DEL HEADER-----------------------------------*/
+
+/*-----------------------------------------------MAIN--------------------------------------------*/
+
+main section {
+    width: 90%;
+    margin: auto;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main section article {
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+main section article div {
+    border: 1px solid #ebebeb;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main section article div h3 {
+    display: none;
+}
+
+main section article div i {
+    /* esta era mi camion original
+    
+    color: #39b54a;
+    border: 1px solid #39b54a ;
+    border-radius: 50%;
+    padding: 5px 15px 15px 5px;
+    
+    el que sigue lo copie de la ejercitacion
+    */
+    
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section article div .precio {
+    width: 30%;
+}
+
+main section article div .descuento {
+    color: #39b54a;
+    width: 70%;
+}
+
+/*-----------------------------------------------FIN DEL MAIN--------------------------------------------*/
+
+/*-------------------------------------------------FOOTER------------------------------------------*/
+
+footer {
+    text-align: center;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+footer i {
+    color: #1259c3;
+    text-align: center;
+    font-size: 2em;
+    
+}
+
+footer section {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.copy {
+    text-align: left;
+    font-size: 12px;
+}
+
+/*-------------------------------------------FIN DEL FOOTER------------------------------------------*/
+
+/*--------------------------------------FORMULARIO DE REGISTRO----------------------------------------*/
+
+.form-register {
+    background-color: #ebebeb;
+    padding: 10px;
+}
+
+
+.form-register div {
+    margin-bottom: 15px;
+    justify-content: center;
+    border-radius: 35%;
+}
+
+input {
+    width: 100%;
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-left: -15px;
+}
+
+/*-----------------------------------FIN DEL FORMULARIO DE REGISTRO----------------------------------------*/
+
+/*---------------------------------------FORMULARIO DE LOGIN----------------------------------------*/
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-login div {
+    padding: 20px;
+    margin: 15px;
+}
+
+.form-login div label input {
+    width: 60vw;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.form-login div button {
+    width: 60vw;
+    background-color: #1259c3;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 1000ms;
+}
+
+/*------------------------------------FIN DEL FORMULARIO DE LOGIN----------------------------------------*/
+
+/*--------------------------------------------MEDIA QUERY------------------------------------------*/
+
+@media (min-width: 361px){
+    main section article div h3 {
+        display: block;
+    }
+    
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 50%;
+    }
+    header nav {
+        display: block;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        
+    }
+    
+    header nav ul {
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+        align-items: flex-start;
+    }
+    
+    header nav ul li {
+        flex-grow: 1;
+        margin: 0 15px;
+
+    }
+
+
+
+    #burger {
+        display: none;
+    }
+    
+    header div.top-header{
+        flex-wrap: nowrap;
+    }
+    header div.top-header div.logo {
+        flex-grow: 1;
+    }
+    
+    header div.top-header div.form {
+        flex-grow: 1;
+    }
+
+    header .header-compra p {
+        font-size: 24px;
+    }
+
+    header div.top-header .header-compra {
+        flex-grow: 1;
+    }
+}
+
+
+
+
+@media (min-width: 769px){
+    main section article {
+        width: 25%;
+    
+}
+
+h3 {
+opacity: 0;
+transition: 1000ms;
+}
+
+h3:hover {
+opacity: 1;
+}
+
+main section article {
+    box-shadow: 0px 0px 0px rgb(100, 100, 100);
+    transition: 1s;
+}
+
+main section article:hover {
+    box-shadow: 0px 0px 30px rgb(100, 100, 100);
+    
+}
+
+main section article i:hover {
+    transform: rotate(-90deg);
+    transition: 1000ms;
+}
+
+.form-login div button:hover {
+    background-color: #02A;
+}
+
+
+footer{
+    text-align: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    display: flex;
+}
+
+footer i {
+    color: #1259c3;
+    text-align: center;
+    font-size: 2em;
+}
+
+footer section {
+    margin-top: 80px;
+    margin-bottom: 80px;   
+}
+
+
+
+
+}
+
+/*-----------------------------------------FIN DEL MEDIA QUERY------------------------------------------*/
+
+
